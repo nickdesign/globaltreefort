@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Contact Form | CodyHouse</title>
+</head>
+<body>
+	<form class="cd-form floating-labels" method="POST" action="http://formspree.io/nick@verygoodcreative.co">
+		<fieldset>
+			<legend>
+			<div class="flexbox" style="margin-top: 0px;">
+				<div class="title">Contact Us</div>
+				<div class="close"><a href="index.html">x</a></div>
+			</div>
+			</legend>
+
+
+			<div class="error-message">
+				<p>Please enter a valid email address</p>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Name</label>
+				<input class="user" type="text" name="cd-name" id="cd-name" required>
+		    </div> 
+
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-email">Email</label>
+				<input class="email error" type="email" name="cd-email" id="cd-email" required>
+		    </div>
+		
+
+			<div class="icon">
+				<label class="cd-label" for="cd-textarea">Message</label>
+      			<textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+			</div>
+
+			<div>
+		      	<input type="submit" value="Send Message">
+		    </div>
+		</fieldset>
+	</form>
+
+	<script type="text/javascript">
+		window.addEventListener("keyup", function(e){ if(e.keyCode == 27) history.back(); }, false);
+	</script>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
